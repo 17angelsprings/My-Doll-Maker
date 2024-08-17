@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://cid3xuhgpu8jd"]
+
+[ext_resource type="Texture2D" uid="uid://bggtow6c5ivtk" path="res://assets/ui/arrow.png" id="1_5fgwe"]
+[ext_resource type="Texture2D" uid="uid://cdjd3nhx7qu1o" path="res://assets/ui/circle.png" id="1_ipndn"]
+[ext_resource type="Script" path="res://src/ui/clickables/dressup_panel.gd" id="1_lffud"]
+
+[node name="DressupPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 78.0
+offset_right = 20.0
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.874889, 0.874889)
+script = ExtResource("1_lffud")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 104.0
+offset_right = 64.0
+offset_bottom = 133.0
+scale = Vector2(5.25641, 16.1554)
+color = Color(1, 1, 1, 0.501961)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 106.0
+offset_right = 171.0
+offset_bottom = 570.0
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Button" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ipndn")
+texture_pressed = ExtResource("1_ipndn")
+texture_hover = ExtResource("1_ipndn")
+
+[node name="Button2" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ipndn")
+texture_pressed = ExtResource("1_ipndn")
+texture_hover = ExtResource("1_ipndn")
+
+[node name="Button3" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ipndn")
+texture_pressed = ExtResource("1_ipndn")
+texture_hover = ExtResource("1_ipndn")
+
+[node name="Button4" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ipndn")
+texture_pressed = ExtResource("1_ipndn")
+texture_hover = ExtResource("1_ipndn")
+
+[node name="Button5" type="TextureButton" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_ipndn")
+texture_pressed = ExtResource("1_ipndn")
+texture_hover = ExtResource("1_ipndn")
+
+[node name="UpArrow" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 46.0
+offset_right = 182.0
+offset_bottom = 123.0
+scale = Vector2(0.454362, 0.631059)
+texture_normal = ExtResource("1_5fgwe")
+texture_pressed = ExtResource("1_5fgwe")
+texture_hover = ExtResource("1_5fgwe")
+
+[node name="DownArrow" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 581.0
+offset_right = 182.0
+offset_bottom = 658.0
+scale = Vector2(0.454362, 0.631059)
+texture_normal = ExtResource("1_5fgwe")
+texture_pressed = ExtResource("1_5fgwe")
+texture_hover = ExtResource("1_5fgwe")
+flip_v = true
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Button4" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/Button5" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="UpArrow" to="." method="_on_up_arrow_pressed"]
+[connection signal="pressed" from="DownArrow" to="." method="_on_down_arrow_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c6cav81fs5s40"]
+
+[node name="UndoRedoButtons" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 591.0
+offset_right = 1130.0
+offset_bottom = 631.0
+
+[node name="UndoButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Undo"
+
+[node name="RedoButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Redo"

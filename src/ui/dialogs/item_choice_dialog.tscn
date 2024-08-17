@@ -1,0 +1,314 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi0w4e074ycdy"]
+
+[ext_resource type="Texture2D" uid="uid://cdjd3nhx7qu1o" path="res://assets/ui/circle.png" id="1_hy0h8"]
+[ext_resource type="Script" path="res://src/ui/dialogs/item_choice_dialog.gd" id="1_mi4gv"]
+
+[node name="ItemChoiceDialog" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mi4gv")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 17.0
+offset_right = 436.0
+offset_bottom = 663.0
+vertical_scroll_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space"]
+layout_mode = 2
+
+[node name="Control4" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space2"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2/Space3"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="Control4" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space2"]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space2"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3/Space3"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="Control4" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space3"]
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space2"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4/Space3"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space4" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space4"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space4"]
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space4"]
+layout_mode = 2
+
+[node name="Control4" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/Space4"]
+layout_mode = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Space" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space2"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space2"]
+layout_mode = 2
+
+[node name="TextureRect3" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3
+
+[node name="Space3" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space3"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5/Space3"]
+layout_mode = 2
+
+[node name="TextureRect4" type="TextureButton" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+texture_normal = ExtResource("1_hy0h8")
+stretch_mode = 3

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://yyplgcmgi6ug"]
+
+[ext_resource type="Texture2D" uid="uid://4h57te3i72jw" path="res://assets/ui/dice.png" id="1_27gh5"]
+
+[node name="Randomize" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 971.0
+offset_top = 437.0
+offset_right = 1094.0
+offset_bottom = 560.0
+rotation = 0.211987
+scale = Vector2(0.523828, 0.523828)
+texture_normal = ExtResource("1_27gh5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 450.0
+offset_right = 1137.0
+offset_bottom = 516.0
+scale = Vector2(0.815727, 0.815727)
+
+[node name="DollCheckButton" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+text = "Doll"
+
+[node name="ColorCheckButton" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+text = "Colors"

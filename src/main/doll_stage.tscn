@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dkqro2qq0t68g"]
+
+[node name="DollStage" type="Node2D"]
+scale = Vector2(11.36, 11.36)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2.56976, 1.44277)
+color = Color(0, 0, 0, 0.152941)

@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://05gfsl2p12hg"]
+
+[ext_resource type="PackedScene" uid="uid://blepc6m8ijb8m" path="res://src/ui/clickables/file_buttons.tscn" id="1_gpbe1"]
+[ext_resource type="PackedScene" uid="uid://dkqro2qq0t68g" path="res://src/main/doll_stage.tscn" id="1_i5g8w"]
+[ext_resource type="Script" path="res://src/main/main.gd" id="1_k1ceb"]
+[ext_resource type="PackedScene" uid="uid://cid3xuhgpu8jd" path="res://src/ui/clickables/dressup_panel.tscn" id="2_hci7w"]
+[ext_resource type="PackedScene" uid="uid://6dt4txn0wrys" path="res://src/ui/clickables/color_picker.tscn" id="3_8g6b7"]
+[ext_resource type="PackedScene" uid="uid://yyplgcmgi6ug" path="res://src/ui/clickables/randomize.tscn" id="4_nk07m"]
+[ext_resource type="PackedScene" uid="uid://crvu6mf144kg0" path="res://src/ui/clickables/help_credits_buttons.tscn" id="5_g4m7a"]
+[ext_resource type="PackedScene" uid="uid://c6cav81fs5s40" path="res://src/ui/clickables/undo_redo_buttons.tscn" id="7_in8yk"]
+[ext_resource type="PackedScene" uid="uid://bi0w4e074ycdy" path="res://src/ui/dialogs/item_choice_dialog.tscn" id="8_hkis0"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_k1ceb")
+
+[node name="DollStage" parent="." instance=ExtResource("1_i5g8w")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -19.0
+offset_right = 973.0
+offset_bottom = 85.0
+scale = Vector2(1.21163, 0.976846)
+color = Color(0.281187, 0.281187, 0.281187, 1)
+
+[node name="DressupPanel" parent="." instance=ExtResource("2_hci7w")]
+offset_left = -3.0
+offset_top = 58.0
+offset_right = 3.0
+offset_bottom = 67.0
+scale = Vector2(0.916715, 0.916715)
+
+[node name="FileButtons" parent="." instance=ExtResource("1_gpbe1")]
+
+[node name="ColorPicker" parent="." instance=ExtResource("3_8g6b7")]
+offset_left = 57.0
+offset_top = 10.0
+offset_right = 57.0
+offset_bottom = 10.0
+
+[node name="Randomize" parent="." instance=ExtResource("4_nk07m")]
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 6.0
+offset_bottom = 10.0
+
+[node name="HelpCreditButtons" parent="." instance=ExtResource("5_g4m7a")]
+offset_left = -15.0
+offset_right = -15.0
+
+[node name="UndoRedoButtons" parent="." instance=ExtResource("7_in8yk")]
+offset_left = -40.0
+offset_top = -22.0
+offset_right = -40.0
+offset_bottom = -22.0
+
+[node name="Title" type="Label" parent="."]
+offset_left = 23.0
+offset_top = 23.0
+offset_right = 218.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 28
+text = "My Doll Maker"
+
+[node name="Window" type="Window" parent="."]
+initial_position = 1
+size = Vector2i(445, 500)
+visible = false
+
+[node name="ItemChoiceDialog" parent="Window" instance=ExtResource("8_hkis0")]
+
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]
